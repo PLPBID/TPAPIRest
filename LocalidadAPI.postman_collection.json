@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "159d95d1-2b27-4fbf-aeac-6fd84211ff68",
+		"name": "LocalidadAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30335143"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/api/v1/localidades"
+			},
+			"response": []
+		},
+		{
+			"name": "Get One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/api/v1/localidades"
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"nombre\": \"luis\",\r\n    \"apellido\": \"gomez\",\r\n\r\n}"
+				},
+				"url": "http://localhost:9000/api/v1/localidades"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:9000/api/v1/localidades"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Julio\",\r\n    \"apellido\": \"Cortázar\",\r\n    \"biografia\": \"Julio Florencio Cortázar (Ixelles, 26 de agosto de 1914-París, 12 de febrero de 1984) fue un escritor y profesor argentino. También trabajó como traductor, oficio que desempeñó para la Unesco y varias editoriales.\"\r\n}"
+				},
+				"url": "http://localhost:9000/api/v1/localidades"
+			},
+			"response": []
+		}
+	]
+}
